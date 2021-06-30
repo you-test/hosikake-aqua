@@ -16,18 +16,13 @@ $('.mv-slick').slick({
   speed: 1800,
 });
 
-$(window).on('scroll', function() {
-  let scrollTop = $(window).scrollTop();
-  let imgPosition = scrollTop / 2;
-
-  if(imgPosition) {
-    $('.scroll-img').css('transfrom', 'translateY(' + imgPosition + 'px)');
-  }
+    
+$(window).scroll(function(){
+    let position = $(window).scrollTop() / 2.5;
+    $('#scroll-img img').css({
+      "transform" : "translateY("+position+"px)"
+  });
 });
-
-
-
-
 
 
 
