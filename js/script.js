@@ -24,11 +24,4 @@ $(window).scroll(function(){
   });
 });
 
-
-
-
-
-
-
-
 });
