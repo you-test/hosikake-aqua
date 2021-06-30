@@ -33,6 +33,59 @@ a {
   margin-bottom: 30px;
 }
 
+/* scroll-img */
+#scroll-img img {
+  width: 80px;
+  position: absolute;
+  opacity: .6;
+  z-index: 2;
+}
+
+#scroll-img img.dolphin1 {
+  top: 1000px;
+  right: 100px;
+}
+
+#scroll-img img.kurage1 {
+  top: 1100px;
+  left: 200px;
+}
+
+#scroll-img img.fish1 {
+  top: 1500px;
+  left: 100px;
+}
+
+#scroll-img img.fish2 {
+  top: 1800px;
+  right: 200px;
+}
+
+#scroll-img img.fish3 {
+  top: 1900px;
+  right: 150px;
+}
+
+#scroll-img img.kurage2 {
+  top: 2500px;
+  left: 200px;
+}
+
+#scroll-img img.hitode1 {
+  top: 3000px;
+  right: 100px;
+}
+
+#scroll-img img.fish4 {
+  top: 3300px;
+  left: 100px;
+}
+
+#scroll-img img.kurage3 {
+  top: 3600px;
+  right: 100px;
+}
+
 /* header */
 #header {
   position: fixed;
@@ -331,13 +384,6 @@ a {
 #park-navi .container .area-title.title-blue {
   color: #fff;
   background: #04C4D9;
-}
-
-#park-navi .container .kurage {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 80px;
 }
 
 #park-navi .back-blue {
@@ -731,6 +777,14 @@ a {
 
 #coupon .coupon-inner .coupon-block ul li img {
   width: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#coupon .coupon-inner .coupon-block ul li img:hover {
+  width: 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /* contact */
@@ -835,6 +889,16 @@ a {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  /* scroll-img_sp */
+  #scroll-img img {
+    width: 50px;
+  }
+  #scroll-img img.dolphin1, #scroll-img img.fish2, #scroll-img img.fish3, #scroll-img img.hitode1, #scroll-img img.kurage3 {
+    right: 10px;
+  }
+  #scroll-img img.kurage1, #scroll-img img.fish1, #scroll-img img.kurage2, #scroll-img img.fish4 {
+    left: 10px;
   }
   /* header_sp */
   #header {

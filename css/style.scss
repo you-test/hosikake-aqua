@@ -35,6 +35,61 @@ a {
   margin-bottom: 30px;
 }
 
+/* scroll-img */ 
+#scroll-img {
+  img {
+    width: 80px;
+    position: absolute;
+    opacity: .6;
+    z-index: 2;
+
+    &.dolphin1 {
+      top: 1000px;
+      right: 100px;
+    }
+
+    &.kurage1 {
+      top: 1100px;
+      left: 200px;
+    }
+
+    &.fish1 {
+      top: 1500px;
+      left: 100px;
+    }
+
+    &.fish2 {
+      top: 1800px;
+      right: 200px;
+    }
+
+    &.fish3 {
+      top: 1900px;
+      right: 150px;
+    }
+
+    &.kurage2 {
+      top: 2500px;
+      left: 200px;
+    }
+
+    &.hitode1 {
+      top: 3000px;
+      right: 100px;
+    }
+
+    &.fish4 {
+      top: 3300px;
+      left: 100px
+    }
+
+    &.kurage3 {
+      top: 3600px;
+      right: 100px;
+    }
+  }
+}
+
 /* header */
 #header {
   position: fixed;
@@ -159,6 +214,7 @@ a {
 
 /* event */
 #event {
+
   .container {
     ul {
       width: 100%;
@@ -260,6 +316,7 @@ a {
 
 /* park-navi */
 #park-navi {
+
   .container {
     position: relative;
 
@@ -283,13 +340,6 @@ a {
         color: $white;
         background: $blue3;
       }
-    }
-
-    .kurage {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 80px;
     }
   }
 }
@@ -643,6 +693,12 @@ a {
         padding-top: 7px;
         img {
           width: 30px;
+          transition: .5s;
+
+          &:hover {
+            width: 35px;
+            transition: .5s;
+          }
         }
       }  
     }
@@ -745,6 +801,28 @@ a {
 .container {
   width: 100%;
   box-sizing: border-box;
+}
+
+/* scroll-img_sp */ 
+#scroll-img {
+  img {
+    width: 50px;
+
+    &.dolphin1,
+    &.fish2,
+    &.fish3,
+    &.hitode1,
+    &.kurage3 {
+      right: 10px;
+    }
+
+    &.kurage1,
+    &.fish1,
+    &.kurage2,
+    &.fish4 {
+      left: 10px;
+    }
+  }
 }
 
 /* header_sp */ 
